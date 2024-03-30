@@ -1,0 +1,655 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.home-section {
+    background-image: url('g.jpeg');
+    background-size:100%;
+    background-position: center center;
+    color: black;
+    padding: 200px;
+    text-align: center;
+     
+}
+
+.highlight-text {
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#typed-welcome {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+   cursor:pointer ;
+    white-space: nowrap;
+    overflow: hidden; /* Hide overflow to prevent unwanted line breaks */
+    border-right: 2px solid; /* Add a border for cursor effect */
+    animation: typing 3s steps(20, end) infinite;
+     
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+.about-section {
+    position: relative;
+    padding: 50px;
+    background-color: #f7f7f7; /* Light background color */
+    text-align: center;
+     background-image: url('g2.jpg');
+      background-size: cover;
+    background-position: center center;
+}
+
+.profile-container {
+    margin: 0 auto 30px; /* Center the profile image */
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.profile-image:hover {
+    transform: scale(1.2); /* Increase size on hover */
+}
+
+.profile-image.oval {
+    border-radius: 50%; /* Adjust the border-radius value to make the oval shape smaller */
+    object-fit: cover; /* Ensures the image covers the entire oval shape */
+    width: 180px; /* Adjust the width as needed */
+    height:250px; /* Adjust the height as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.about-text {
+    margin-bottom: 30px;
+}
+
+
+
+/* Education box position */
+/* Flex container for diagonal layout */
+/* Flex container for diagonal layout */
+.vbox-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line */
+    gap: 10px; /* Adjust the gap between boxes */
+    justify-content: center; /* Align boxes horizontally */
+}
+
+/* Square box styles */
+.square-box {
+    width: 200px;
+    height: 350px; /* Adjust the height as needed */
+    background-color: lightgrey;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Allow boxes to grow to fill available space */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover and active effects */
+.square-box:hover,
+.square-box.active {
+    transform: scale(1.2);
+}
+
+/* Center headings inside square boxes */
+/* Center headings inside square boxes */
+.square-box h3 {
+    margin: 0;
+    text-align: center; /* Center text horizontally */
+}
+
+/* Active state for headings */
+.square-box.active h3 {
+    margin: 0;
+    text-align: center; /* Center text horizontally */
+}
+
+
+/* Education box position */
+.square-box.education {
+    order: 1;
+}
+
+/* Skills box position */
+.square-box.skills {
+    margin-top: 30px;
+    order: 2;
+}
+
+/* Computer Skills box position */
+.square-box.cskills {
+    margin-top: 50px;
+    order: 3;
+}
+
+/* Interests box position */
+.square-box.interest {
+    margin-top: 70px;
+    order: 4;
+}
+
+
+/* CSS styles for profile image */
+
+
+
+
+/* Portfolio Section */
+.portfolio-section {
+    background-image: url('g2.jpg');
+    background-size: cover;
+  background-position: center center;
+    background-color: #eaeaea;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Projects Section */
+.projects-section {
+    background-image: url('g2.jpg');
+    background-size: cover;
+  background-position: center center;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.projects-section h2 {
+    color: #333;
+    text-align: center;
+}
+
+.project-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.project-list li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.project-list li a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none; /* Remove underlines from links */
+    font-size: 18px;
+    text-align: center;
+}
+
+.project-list li a:hover {
+    color: black; 
+    text-align: center;/* Darker blue color on hover */
+}
+
+/* Contact Section */
+.contact-section {
+    background-image: url('g2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+.contact-info {
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        .contact-info i {
+            margin-right: 10px;
+        }
+        /* Style the email link */
+        .contact-info a {
+            color: black; /* Change the color to black */
+            text-decoration: none; /* Remove underline */
+        }
+        .contact-info a:hover {
+            color: blue; /* Change color on hover if needed */
+        }
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #ffa500;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.home-section {
+    background-image: url('background.jpg');
+    background-size:100%;
+    background-position: center center;
+    color: black;
+    padding: 200px;
+    text-align: center;
+     
+}
+
+.highlight-text {
+    font-weight: bold;
+    color: black;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#typed-welcome {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+   cursor:pointer ;
+    white-space: nowrap;
+    overflow: hidden; /* Hide overflow to prevent unwanted line breaks */
+    border-right: 2px solid; /* Add a border for cursor effect */
+    animation: typing 3s steps(20, end) forwards;
+     
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+.about-section {
+    position: relative;
+    padding: 50px;
+    background-color: #f7f7f7; /* Light background color */
+    text-align: center;
+     background-image: url('images.jpeg');
+      background-size: cover;
+    background-position: center center;
+}
+
+.profile-container {
+    margin: 0 auto 30px; /* Center the profile image */
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.profile-image:hover {
+    transform: scale(1.2); /* Increase size on hover */
+}
+
+.profile-image.oval {
+    border-radius: 50%; /* Adjust the border-radius value to make the oval shape smaller */
+    object-fit: cover; /* Ensures the image covers the entire oval shape */
+    width: 180px; /* Adjust the width as needed */
+    height:250px; /* Adjust the height as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.about-text {
+    margin-bottom: 30px;
+}
+
+
+
+.vbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.square-box {
+    width: 250px;
+    height: 350px;
+    background-color: lightgrey;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.square-box:hover {
+    transform: scale(1.05);
+
+}
+
+.square-box h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.square-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.square-box ul li {
+    margin-bottom: 5px;
+}
+
+/* Add specific styles for each box */
+.education {
+    background-color: #db349e;
+    color: #fff;
+}
+
+.skills {
+    background-color: #7627ae;
+    color: #fff;
+}
+
+.cskills {
+    background-color: #f37312;
+    color: #fff;
+}
+
+.interest {
+    background-color: #67b8d3;
+    color: #fff;
+}
+
+
+/* CSS styles for profile image */
+
+.project-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.project-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+.project-container {
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-container:hover img {
+    transform: scale(1.1);
+}
+
+.project-item h3 {
+    margin: 10px 0;
+}
+
+.project-item p {
+    margin-bottom: 20px;
+}
+
+.project-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: lightpink;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-item a:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Portfolio Section */
+.portfolio-section {
+    background-image: url('images1.jpeg');
+    background-size: cover;
+  background-position: center center;
+    background-color: #eaeaea;
+    padding: 50px;
+    text-align: center;
+}
+
+.projects-section {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url('images1.jpeg');
+    background-size: cover;
+}
+
+.container {
+    max-width: 650px;
+height: 300px;
+
+
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional box shadow */
+}
+
+.box-content {
+    text-align: center;
+}
+
+.box-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: lightpink;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.box-content a:hover {
+    background-color: #0056b3;
+}
+
+.contact-section {
+    background-image: url('images1.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+.contact-info {
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        .contact-info i {
+            margin-right: 10px;
+        }
+        /* Style the email link */
+        .contact-info a {
+            color: black; /* Change the color to black */
+            text-decoration: none; /* Remove underline */
+        }
+        .contact-info a:hover {
+            color: blue; /* Change color on hover if needed */
+        }
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form input[type="submit"] {
+    background-color: rgb(255, 182, 248);
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: rgb(255, 182, 248);
+}
+.containercontact {
+    max-width: 650px;
+height: 600px;
+
+
+    margin: 0 auto;
+    background-color: rgba(103, 164, 214, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(59, 55, 55, 0.2); /* Optional box shadow */
+}
+
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
